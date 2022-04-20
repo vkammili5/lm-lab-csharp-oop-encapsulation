@@ -21,7 +21,7 @@ namespace Encapsulation.Models
 
         public void DisplayAccountBalanceDetails()
         {
-            Console.WriteLine("Your account balance is " + _accountBalance);
+            Console.WriteLine($"Your account balance is {_accountBalance}");
         }
 
         public void DebitAmount(int amount)
