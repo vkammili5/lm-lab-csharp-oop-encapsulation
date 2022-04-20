@@ -29,3 +29,30 @@ Console.WriteLine("Let's make a lot of money right now! Let's change the account
 myDodgyBankAccount.AccountBalance = 1000000;
 myDodgyBankAccount.GetAccountBalanceDetails();
 Console.WriteLine("😻 Weeeeee!!!!\n");
+
+//SECURE BANK ACCOUNT
+Console.WriteLine("--- SECURE BANK ACCOUNT ---\n");
+Console.WriteLine("Mmm...let's make a secure bank account!");
+SecureBankAccount mySecureBankAccount = new(MY_ACCOUNT_NUMBER);
+
+Console.WriteLine("What is my current balance?");
+mySecureBankAccount.DisplayAccountBalanceDetails();
+
+Console.WriteLine("Let's deposit an amount of 30");
+mySecureBankAccount.DepositAmount(30);
+mySecureBankAccount.DisplayAccountBalanceDetails();
+
+Console.WriteLine("Wow! Looks like we get a reward of 50 when we deposit an amount");
+
+Console.WriteLine("Let's be naughty and add rewards without depositing!");
+Console.WriteLine("Oh no :( It looks like we can't do this - it's too secure!");
+//mySecureBankAccount.AddReward();
+//mySecureBankAccount.AddReward();
+//mySecureBankAccount.AddReward();
+mySecureBankAccount.DisplayAccountBalanceDetails();
+
+Console.WriteLine("Let's make a lot of money right now! Let's change the account balance directly!");
+Console.WriteLine("Oh no :( It looks like we can't do this - it's too secure!");
+//mySecureBankAccount._accountBalance = 1000000;
+mySecureBankAccount.DisplayAccountBalanceDetails();
+Console.WriteLine("😹 Well I guess that's secure!");
